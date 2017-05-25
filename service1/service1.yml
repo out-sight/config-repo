@@ -3,3 +3,5 @@ application:
   name: service1
 server:
   port: 8081
+management:
+  port: 9081

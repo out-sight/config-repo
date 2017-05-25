@@ -1,3 +1,11 @@
 ---
 application:
   name: outsight
+management:
+  security:
+    enabled: false
+  context-path: /manage
+eureka:
+  instance:
+    statusPageUrl: https://${spring.cloud.client.hostname}:${management.port}/manage/info
+    healthCheckUrl: https://${spring.cloud.client.hostname}:${management.port}/manage/health    
